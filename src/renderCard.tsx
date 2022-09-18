@@ -133,22 +133,7 @@ const renderCard = async (body: LanyardTypes.Root, params: Parameters): Promise<
     activity = Array.isArray(activities) ? activities[0] : activities;
 
     return `
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml" width="410px" height="210px">
-                <foreignObject x="0" y="0" width="410" height="210">
-                    <div xmlns="http://www.w3.org/1999/xhtml" style="
-                        position: absolute;
-                        width: 400px;
-                        height: 200px;
-                        inset: 0;
-                        background-color: #${backgroundColor};
-                        color: ${theme === "dark" ? "#fff" : "#000"};
-                        font-family: 'Century Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-                        font-size: 16px;
-                        display: flex;
-                        flex-direction: column;
-                        padding: 5px;
-                        border-radius: ${borderRadius};
-                    ">
+
                         <div style="
                             width: 400px;
                             height: 100px;
